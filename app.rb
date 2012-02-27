@@ -29,6 +29,7 @@ configure :production do
 end
 
 before do
+  ENV['INSTAGRAM_ACCESS_TOKEN'] ||= "23883203.d4206dc.a88c82a5172d475c807236684c26ef2f"
   @google_analytics_id = ENV['GOOGLE_ANALYTICS_ID']
 
   @target_tag  = ENV['INSTAGRAM_TARGET_TAG'] || 'cat'
